@@ -1,0 +1,91 @@
+.Home {
+  height: calc(100vh - 70px);
+}
+
+.Home__input {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 85% 1fr;
+}
+
+.Home__input label {
+  text-align: start;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: var(--mb-1);
+}
+
+.Home__input input[type="text"],
+button {
+  background-color: var(--container-color);
+  padding: var(--mb-1) var(--mb-1-5);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.Home__input button {
+  color: var(--text-color);
+}
+
+.Home__input input[type="text"] {
+  border-top-left-radius: var(--mb-1);
+  border-bottom-left-radius: var(--mb-1);
+}
+
+.Home__input button {
+  border-top-right-radius: var(--mb-1);
+  border-bottom-right-radius: var(--mb-1);
+}
+
+.Home__results {
+  width: 100%;
+  margin-top: var(--mb-2);
+}
+
+.Image__result {
+  max-width: 500px;
+  padding: var(--mb-1-5);
+  margin: auto;
+}
+
+.Image__result img {
+  width: 100%;
+}
+
+.Error {
+  background-color: var(--apricot-color);
+  color: var(--container-color);
+  padding: var(--mb-1);
+  border-radius: var(--mb-1);
+  margin-top: var(--mb-1);
+}
+
+.Home__loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Home__loader p {
+  margin-top: var(--mb-0-5);
+}
+
+@media screen and (max-width: 576px) {
+  .Home__input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Home__input input[type="text"] {
+    padding: var(--mb-1) var(--mb-1-5);
+    border-radius: var(--mb-1);
+  }
+  
+  .Home__input button {
+    padding: var(--mb-0-5) var(--mb-1);
+    margin-top: var(--mb-0-5);    
+    border-radius: var(--mb-1);
+    border: 1px solid var(--text-color);
+  }
+}

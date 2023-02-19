@@ -1,0 +1,71 @@
+.Labs {
+  height: calc(100vh - 70px);
+}
+
+.Labs__input {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Labs__input label:nth-of-type(1) {
+  margin-bottom: var(--mb-1);
+}
+
+.GroupInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.GroupInput input[type="text"], .GroupInput label {
+  all: unset;
+  background-color: var(--container-color);
+  padding: var(--mb-1) var(--mb-1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+  rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  height: 30px;
+}
+
+.GroupInput input[type="text"] {
+  width: 85%;
+
+  border-top-left-radius: var(--mb-1);
+  border-bottom-left-radius: var(--mb-1);
+}
+
+.GroupInput label {
+  width: 15%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+
+  border-top-right-radius: var(--mb-1);
+  border-bottom-right-radius: var(--mb-1);
+}
+
+.IconUpload img {
+  width: 30px;
+  transition: transform var(--ts-soft);
+}
+
+.IconUpload:hover img {
+  transform: scale(110%);
+}
+
+.Labs__input button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: var(--text-color);
+  /* margin-top: var(--mb-0-5); */
+}
+
+.Labs__input input[type="file"] {
+  display: none;
+  visibility: hidden 
+}
+
+.Labs__input button {
+  border-radius: var(--mb-1);
+}
+
